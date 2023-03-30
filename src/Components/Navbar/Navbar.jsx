@@ -5,7 +5,7 @@ import './Navbar.css'
 import logo from '../../assests/logo22.png'
 import search from '../../assests/search.svg'
 import Avatar from '../../Components/Avatar/Avatar'
-import Button from '../../Components/Button/Button'
+
 
 const Navbar=()=>{
 
@@ -27,8 +27,8 @@ const Navbar=()=>{
                 {user === null? 
                 <Link to='/Auth' className="nav-item nav-links">Log in</Link> :
                 <>
-                <Link to='/'><Avatar>M</Avatar></Link> 
-                <Button>Log out</Button>
+                <Avatar backgroundColor='#009dff' px='10px' py='7px' borderRadius='50%' ><Link to='/User' style={{color:'#ffffff',textDecoration:'none'}}>M </Link></Avatar>
+                <button className="nav-item nav-links" >Log out</button>
             
                 </>
                 }
