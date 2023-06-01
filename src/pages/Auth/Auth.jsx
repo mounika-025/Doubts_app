@@ -29,7 +29,12 @@ const Auth = () => {
           <label htmlFor="password">
             <div>
               <h4>Password</h4>
-              {!isSignedUp && <h4>Forgot password?</h4>}
+              {!isSignedUp && (
+                <p style={{ color: "#007ac6", fontSize: "13px" }}>
+                  {" "}
+                  Forgot password?
+                </p>
+              )}
             </div>
             <input type="password" name="password" id="password" />
             {isSignedUp && (
@@ -42,7 +47,7 @@ const Auth = () => {
             )}
           </label>
           {/* {isSignedUp && (<label htmlFor="check"><input type="checkbox" id="check"/></label>)} */}
-          <button type="submit" className="auth-btn">
+          <button type="submit" className="auth-button">
             {isSignedUp ? "Sign Up" : "Login"}
           </button>
           {isSignedUp && (
