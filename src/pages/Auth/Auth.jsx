@@ -27,11 +27,16 @@ const Auth = () => {
             <input type="email" name="email" id="email" />
           </label>
           <label htmlFor="password">
-            <div>
+            <div className="password-container">
               <h4>Password</h4>
               {!isSignedUp && (
-                <p style={{ color: "#007ac6", fontSize: "13px" }}>
-                  {" "}
+                <p
+                  style={{
+                    color: "#007ac6",
+                    fontSize: "13px",
+                    textAlign: "end",
+                  }}
+                >
                   Forgot password?
                 </p>
               )}

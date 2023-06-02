@@ -34,6 +34,11 @@
   box-shadow: 0 10px 25px rgb(0 0 0 / 5%), 0 20px 48px rgb(0 0 0 / 5%),
     0 1px 4px rgb(0 0 0 / 10%);
 }
+.password-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .auth-container form p {
   word-wrap: break-word;
